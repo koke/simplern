@@ -3,7 +3,8 @@
     "start": "react-native start",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "haul": "haul"
   },
   "dependencies": {
     "react": "16.8.3",
@@ -12,7 +13,8 @@
     "react-native-web": "^0.11.4"
   },
   "devDependencies": {
-    "babel-preset-expo": "^5.1.1"
+    "babel-preset-expo": "^5.1.1",
+    "haul": "^1.0.0-rc.15"
   },
   "private": true
 }
