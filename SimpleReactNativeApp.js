@@ -1,10 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Button, View } from 'react-native';
 
 export default function SimpleReactNativeApp() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Button
+        title='Crash me!'
+        onPress={ () => {
+          throw new Error('crashed');
+        } }
+      />
     </View>
   );
 }

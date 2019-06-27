@@ -92267,12 +92267,16 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
         fileName: _jsxFileName,
         lineNumber: 6
       }
-    }, _react.default.createElement(_reactNative.Text, {
+    }, _react.default.createElement(_reactNative.Button, {
+      title: "Crash me!",
+      onPress: function onPress() {
+        throw new Error('crashed');
+      },
       __source: {
         fileName: _jsxFileName,
         lineNumber: 7
       }
-    }, "Open up App.js to start working on your app!"));
+    }));
   }
 
   var styles = _reactNative.StyleSheet.create({
