@@ -14,7 +14,8 @@
   },
   "devDependencies": {
     "babel-preset-expo": "^5.1.1",
-    "haul": "^1.0.0-rc.15"
+    "haul": "^1.0.0-rc.15",
+    "react-hot-loader": "^4.11.1"
   },
   "private": true
 }
