@@ -13,6 +13,7 @@ export default {
       },
       ...config.module.rules
     ];
+    config.devtool = false;
 
     return config;
   }
