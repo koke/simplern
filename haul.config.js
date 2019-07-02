@@ -1,5 +1,7 @@
 import { createWebpackConfig } from 'haul';
 import webpack from 'webpack';
+import fs from 'fs';
+import path from 'path';
 
 export default {
   webpack: (env) => {
@@ -11,7 +13,7 @@ export default {
 		// Webpack will ignore our devtool configuration if those plugins are present.
 		const pluginBlacklist = new Set( [
 			webpack.SourceMapDevToolPlugin,
-			webpack.EvalSourceMapDevToolPlugin,
+      webpack.EvalSourceMapDevToolPlugin,
 		] );
     config.plugins = config.plugins.filter( ( plugin ) => ! pluginBlacklist.has( plugin.constructor ) );
     config.plugins = [
@@ -33,6 +35,8 @@ export default {
       ...config.module.rules
     ];
     config.devtool = false;
+
+    fs.writeFileSync( path.resolve( 'results/haul.config.js' ), JSON.stringify( config, null, 2 ) )
 
     return config;
   }
