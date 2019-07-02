@@ -17,18 +17,12 @@
     "./index.js"
   ],
   "output": {
-    "path": "/var/folders/ly/xlx6y_sx7d1605h97m4dhjkc0000gn/T/haul-start-6X1y7T",
+    "path": "/var/folders/ly/xlx6y_sx7d1605h97m4dhjkc0000gn/T/haul-start-SjZlh2",
     "filename": "index.ios.bundle",
-    "publicPath": "http://localhost:9092/"
+    "publicPath": "http://localhost:8081/"
   },
   "module": {
     "rules": [
-      {
-        "test": {},
-        "loaders": [
-          "babel-loader"
-        ]
-      },
       {
         "parser": {
           "requireEnsure": false
@@ -80,6 +74,12 @@
             "root": "/Users/koke/a8c/try/simplern"
           }
         }
+      },
+      {
+        "test": {},
+        "loaders": [
+          "babel-loader"
+        ]
       }
     ]
   },

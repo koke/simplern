@@ -28,11 +28,11 @@ export default {
     ]
     
     config.module.rules = [
+      ...config.module.rules,
       {
         test: /\.js?$/,
         loaders: ['babel-loader']
       },
-      ...config.module.rules
     ];
     config.devtool = false;
 
