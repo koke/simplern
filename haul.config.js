@@ -13,8 +13,18 @@ export default {
 			webpack.SourceMapDevToolPlugin,
 			webpack.EvalSourceMapDevToolPlugin,
 		] );
-		config.plugins = config.plugins.filter( ( plugin ) => ! pluginBlacklist.has( plugin.constructor ) );
-
+    config.plugins = config.plugins.filter( ( plugin ) => ! pluginBlacklist.has( plugin.constructor ) );
+    config.plugins = [
+      ...config.plugins,
+      new webpack.EvalSourceMapDevToolPlugin({
+        module: true,
+      }),
+      new webpack.SourceMapDevToolPlugin({
+        test: /\.(js|css|(js)?bundle)($|\?)/i,
+        filename: '[file].map',
+      }),
+    ]
+    
     config.module.rules = [
       {
         test: /\.js?$/,
