@@ -10,7 +10,7 @@ export default {
     // By default, haul registers some plugins to generate source maps.
 		// Webpack will ignore our devtool configuration if those plugins are present.
 		const pluginBlacklist = new Set( [
-			// webpack.SourceMapDevToolPlugin,
+			webpack.SourceMapDevToolPlugin,
 			webpack.EvalSourceMapDevToolPlugin,
 		] );
 		config.plugins = config.plugins.filter( ( plugin ) => ! pluginBlacklist.has( plugin.constructor ) );
