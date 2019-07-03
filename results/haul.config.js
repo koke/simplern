@@ -12,12 +12,10 @@
     "/Users/koke/a8c/try/simplern/node_modules/haul/src/vendor/polyfills/Object.es7.js",
     "/Users/koke/a8c/try/simplern/node_modules/haul/src/vendor/polyfills/babelHelpers.js",
     "/Users/koke/a8c/try/simplern/node_modules/react-native/Libraries/Core/InitializeCore.js",
-    "/Users/koke/a8c/try/simplern/node_modules/haul/src/utils/polyfillEnvironment.js",
-    "/Users/koke/a8c/try/simplern/node_modules/haul/hot/patch.js",
     "./index.js"
   ],
   "output": {
-    "path": "/var/folders/ly/xlx6y_sx7d1605h97m4dhjkc0000gn/T/haul-start-ia1g7o",
+    "path": "/var/folders/ly/xlx6y_sx7d1605h97m4dhjkc0000gn/T/haul-start-ysOivy",
     "filename": "index.ios.bundle",
     "publicPath": "http://localhost:9092/"
   },
@@ -56,9 +54,7 @@
                 ]
               ],
               "plugins": [
-                "/Users/koke/a8c/try/simplern/node_modules/haul/src/utils/fixRequireIssues.js",
-                "/Users/koke/a8c/try/simplern/node_modules/react-hot-loader/babel.js",
-                "/Users/koke/a8c/try/simplern/node_modules/haul/src/hot/babelPlugin.js"
+                "/Users/koke/a8c/try/simplern/node_modules/haul/src/utils/fixRequireIssues.js"
               ],
               "cacheDirectory": true
             }
@@ -104,11 +100,6 @@
         "debug": true,
         "test": {}
       }
-    },
-    {
-      "options": {},
-      "fullBuildTimeout": 200,
-      "requestTimeout": 10000
     },
     {
       "options": {}

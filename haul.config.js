@@ -5,6 +5,7 @@ import path from 'path';
 
 export default {
   webpack: (env) => {
+    env.disableHotReloading = true;
     const config = createWebpackConfig({
       entry: `./index.js`
     })(env);
