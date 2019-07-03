@@ -17,9 +17,9 @@
     "./index.js"
   ],
   "output": {
-    "path": "/var/folders/ly/xlx6y_sx7d1605h97m4dhjkc0000gn/T/haul-start-SjZlh2",
+    "path": "/var/folders/ly/xlx6y_sx7d1605h97m4dhjkc0000gn/T/haul-start-ia1g7o",
     "filename": "index.ios.bundle",
-    "publicPath": "http://localhost:8081/"
+    "publicPath": "http://localhost:9092/"
   },
   "module": {
     "rules": [
