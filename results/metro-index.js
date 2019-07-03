@@ -92258,6 +92258,8 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _reactNative = _$$_REQUIRE(_dependencyMap[2], "react-native");
 
+  var _crashButton = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[3], "@wordpress-mobile/crash-button"));
+
   var _jsxFileName = "/Users/koke/a8c/try/simplern/SimpleReactNativeApp.js";
 
   function SimpleReactNativeApp() {
@@ -92265,16 +92267,14 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       style: styles.container,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 6
+        lineNumber: 7
       }
-    }, _react.default.createElement(_reactNative.Button, {
-      title: "Crash me!",
-      onPress: function onPress() {
-        throw new Error('crashed');
-      },
+    }, _react.default.createElement(_crashButton.default, {
+      title: "\uD83D\uDE48 Crash me",
+      errorMessage: "\uD83D\uDE4A I crashed!",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 7
+        lineNumber: 8
       }
     }));
   }
@@ -92287,7 +92287,65 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       justifyContent: 'center'
     }
   });
-},567,[1,53,2],"SimpleReactNativeApp.js");
+},567,[1,53,2,568],"SimpleReactNativeApp.js");
+__d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
+  module.exports = function (e) {
+    var r = {};
+
+    function t(n) {
+      if (r[n]) return r[n].exports;
+      var o = r[n] = {
+        i: n,
+        l: !1,
+        exports: {}
+      };
+      return e[n].call(o.exports, o, o.exports, t), o.l = !0, o.exports;
+    }
+
+    return t.m = e, t.c = r, t.d = function (e, r, n) {
+      t.o(e, r) || Object.defineProperty(e, r, {
+        configurable: !1,
+        enumerable: !0,
+        get: n
+      });
+    }, t.r = function (e) {
+      Object.defineProperty(e, "__esModule", {
+        value: !0
+      });
+    }, t.n = function (e) {
+      var r = e && e.__esModule ? function () {
+        return e.default;
+      } : function () {
+        return e;
+      };
+      return t.d(r, "a", r), r;
+    }, t.o = function (e, r) {
+      return Object.prototype.hasOwnProperty.call(e, r);
+    }, t.p = "", t(t.s = 2);
+  }([function (e, r) {
+    e.exports = _$$_REQUIRE(_dependencyMap[0], "react");
+  }, function (e, r) {
+    e.exports = _$$_REQUIRE(_dependencyMap[1], "react-native");
+  }, function (e, r, t) {
+    "use strict";
+
+    t.r(r);
+    var n = t(1),
+        o = t(0);
+
+    r.default = function (e) {
+      var r = e.title,
+          t = e.errorMesage,
+          u = {
+        title: r,
+        onPress: Object(o.useCallback)(function () {
+          throw new Error(t);
+        }, [t])
+      };
+      return Object(o.createElement)(n.Button, u);
+    };
+  }]);
+},568,[53,2],"node_modules/@wordpress-mobile/crash-button/build/index.js");
 __r(92);
 __r(0);
 //# sourceMappingURL=http://localhost:9091/index.map?platform=ios&dev=true&minify=false
