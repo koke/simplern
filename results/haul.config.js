@@ -15,7 +15,7 @@
     "./index.js"
   ],
   "output": {
-    "path": "/var/folders/ly/xlx6y_sx7d1605h97m4dhjkc0000gn/T/haul-start-4Ip09Z",
+    "path": "/var/folders/ly/xlx6y_sx7d1605h97m4dhjkc0000gn/T/haul-start-2re3M9",
     "filename": "index.ios.bundle",
     "publicPath": "http://localhost:9092/"
   },
