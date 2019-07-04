@@ -92276,6 +92276,15 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
         fileName: _jsxFileName,
         lineNumber: 8
       }
+    }), _react.default.createElement(_reactNative.Button, {
+      title: "\uD83D\uDE48 Crash me in the App",
+      onPress: function onPress() {
+        throw new Error('🙊 I crashed!');
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      }
     }));
   }
 

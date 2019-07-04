@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, Button, View } from 'react-native';
 import CrashButton from '@wordpress-mobile/crash-button';
 
 export default function SimpleReactNativeApp() {
@@ -8,6 +8,10 @@ export default function SimpleReactNativeApp() {
       <CrashButton
         title='🙈 Crash me'
         errorMessage='🙊 I crashed!'
+      />
+      <Button
+        title='🙈 Crash me in the App'
+        onPress={ () => { throw new Error( '🙊 I crashed!' ) } }
       />
     </View>
   );
