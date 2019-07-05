@@ -13,9 +13,10 @@
     "react-native-web": "^0.11.4"
   },
   "devDependencies": {
+    "@haul-bundler/cli": "^0.6.0",
+    "@haul-bundler/preset-0.59": "^0.6.1",
     "babel-loader": "^8.0.6",
     "babel-preset-expo": "^5.1.1",
-    "haul": "^1.0.0-rc.15",
     "react-hot-loader": "^4.11.1",
     "webpack-merge": "^4.2.1"
   },

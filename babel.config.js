@@ -1,6 +1,6 @@
 module.exports = function(api) {
   api.cache(true);
   return {
-    presets: ['module:metro-react-native-babel-preset'],
+    presets: ['module:@haul-bundler/babel-preset-react-native'],
   };
 };
